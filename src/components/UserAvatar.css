@@ -1,0 +1,46 @@
+/* UserAvatar.css */
+.user-avatar-container {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .user-avatar {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+  }
+  
+  .user-avatar-placeholder {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #ccc;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .user-name-tooltip {
+	position: absolute;
+	background-color: #333;
+	color: #fff;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 1;
+	bottom: 120%;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .user-avatar-container:hover .user-name-tooltip {
+	opacity: 1;
+	visibility: visible;
+  }

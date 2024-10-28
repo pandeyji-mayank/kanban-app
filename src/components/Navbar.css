@@ -7,7 +7,7 @@
 
 .display-button {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     padding: 8px 12px;
     background: white;
@@ -25,6 +25,8 @@
     border-radius: 4px;
     padding: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 10;
+	transition: 0.2s;
 }
 
 .menu-item {

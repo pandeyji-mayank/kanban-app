@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import propTypes from 'prop-types';
+
 import './Navbar.css';
+
+import display from '../assets/Display.svg';
+import down from '../assets/down.svg';
+import Icon from './Icon.jsx';
 
 function Navbar({ grouping, setGrouping, ordering, setOrdering }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,9 +13,9 @@ function Navbar({ grouping, setGrouping, ordering, setOrdering }) {
     return (
         <nav className="navbar">
             <div className="display-button" onClick={() => setIsOpen(!isOpen)}>
-                <span className="icon">≡</span>
+                <span className="icon"><Icon icon={display} /></span>
                 <span>Display</span>
-                <span className="icon">▼</span>
+                <span className="icon"><Icon icon={down} /></span>
             </div>
 
             {isOpen && (
@@ -40,5 +46,12 @@ function Navbar({ grouping, setGrouping, ordering, setOrdering }) {
         </nav>
     );
 }
+
+Navbar.propTypes = {
+	grouping: propTypes.string.isRequired,
+	setGrouping: propTypes.func.isRequired,
+	ordering: propTypes.string.isRequired,
+	setOrdering: propTypes.func.isRequired,
+};
 
 export default Navbar;
