@@ -1,0 +1,68 @@
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ticket-id {
+    color: #6b6f76;
+    font-size: 14px;
+}
+
+.user-avatar {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.status-dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.status-dot.available {
+    background: #00b884;
+}
+
+.status-dot.unavailable {
+    background: #95979d;
+}
+
+.card-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.card-tags {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.priority-tag,
+.feature-tag {
+    padding: 2px 8px;
+    border: 1px solid #e6e7eb;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #6b6f76;
+}

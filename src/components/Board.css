@@ -1,0 +1,7 @@
+.board {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    overflow-x: auto;
+    height: calc(100vh - 64px);
+}

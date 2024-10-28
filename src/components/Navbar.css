@@ -1,0 +1,42 @@
+.navbar {
+    padding: 16px 24px;
+    background: white;
+    border-bottom: 1px solid #e6e7eb;
+    position: relative;
+}
+
+.display-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #e6e7eb;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    background: white;
+    border: 1px solid #e6e7eb;
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.menu-item select {
+    padding: 4px 8px;
+    border: 1px solid #e6e7eb;
+    border-radius: 4px;
+    margin-left: 16px;
+}

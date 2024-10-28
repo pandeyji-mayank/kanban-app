@@ -1,0 +1,35 @@
+.column {
+    min-width: 320px;
+    background: #f4f5f8;
+}
+
+.column-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.column-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.ticket-count {
+    color: #6b6f76;
+}
+
+.add-button,
+.more-button {
+    padding: 4px 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
